@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     list-style: none;
+
 }
 
 
@@ -14,22 +15,23 @@ header {
     color: #fff;
     padding: .5rem;
 }
-.photosRestos img{
 
-    height: 400px;
-    width: 320px;
-    margin: 3px;
+.photosRestos img{
+ 
+    height:400px;
+    width:300px;
     border-radius: 15px;
 }
+
 .photosRestos{
-   margin-left: auto;
-    margin-right: auto;
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
+
 .photosRestos button{
     border-radius: 15px;
-    border-width: 3px;
+    border-style: hidden;
+    background-color: transparent;
 }
-
