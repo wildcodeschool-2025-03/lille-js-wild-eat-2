@@ -1,38 +1,39 @@
-/* Style global */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    list-style: none;
+
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+
+header {
+    text-align: center;
+    min-height: 250px;
+    background-image: url("photo\ ville\ de\ lille.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #fff;
+    padding: .5rem;
+}
+
+.photosRestos img {
+
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    margin: 20px
+}
+
+.photosRestos {
+
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    flex-wrap: wrap;
 }
 
-/* Conteneur des images */
-.image-container {
-    display: flex;
-    gap: 20px;
-    /* Espace entre les images */
-}
-
-/* Style des images */
-.image-container img {
-    width: 220px;
-    /* Largeur des images */
-    height: auto;
-    /* Hauteur automatique pour garder le ratio */
-    border: 4px solid rgba(0, 0, 0, 0.2);
-    /* Cadre gris avec 20% de transparence */
-    border-radius: 10px;
-    /* Coins arrondis */
-    padding: 10px;
-    /* Espace entre l’image et le cadre */
+.photosRestos button {
+    border-radius: 15px;
+    border-style: hidden;
     background-color: transparent;
-    /* Fond du cadre transparent */
 }
