@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
     list-style: none;
-}
 
+}
 
 header {
     text-align: center;
     min-height: 250px;
-    background-image: url("Photo-Wenov.jpg");
+    background-image: url("image/Photo-Wenov.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -16,24 +16,26 @@ header {
 }
 
 .photosRestos img {
-
     height: 400px;
-    width: 320px;
-    margin: 3px;
+    width: 300px;
     border-radius: 15px;
+    margin: 20px
 }
 
 .photosRestos {
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
 }
 
 .photosRestos button {
     border-radius: 15px;
     border-width: 3px;
+    border-style: hidden;
+    background-color: transparent;
 }
 
 .footer-image {
