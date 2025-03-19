@@ -21,13 +21,15 @@ header {
     height:400px;
     width:300px;
     border-radius: 15px;
+    margin: 20px
 }
 
 .photosRestos{
     
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .photosRestos button{
