@@ -4,7 +4,6 @@
 
 }
 
-
 header {
     text-align: center;
     min-height: 250px;
@@ -16,17 +15,10 @@ header {
     padding: .5rem;
 }
 
-<<<<<<< HEAD:projet-1-jsc.css
 .photosRestos img{
  
     height:400px;
     width: 330px;
-=======
-.photosRestos img {
-
-    height: 400px;
-    width: 300px;
->>>>>>> c31cc7ff95c6db19b3d6af833483694b81523c90:style.css
     border-radius: 15px;
     margin: 20px
 }
