@@ -7,29 +7,38 @@
 header {
     text-align: center;
     min-height: 250px;
-    background-image: url("photo\ ville\ de\ lille.jpg");
+    background-image: url("Photo-Wenov.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     color: #fff;
     padding: .5rem;
 }
-.photosRestos img{
+
+.photosRestos img {
 
     height: 400px;
     width: 320px;
     margin: 3px;
     border-radius: 15px;
 }
-.photosRestos{
-   margin-left: auto;
+
+.photosRestos {
+    margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.photosRestos button{
+
+.photosRestos button {
     border-radius: 15px;
     border-width: 3px;
 }
 
+.footer-image {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    background-repeat: 50px;
+}
