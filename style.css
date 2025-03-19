@@ -1,0 +1,38 @@
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur des images */
+.image-container {
+    display: flex;
+    gap: 20px;
+    /* Espace entre les images */
+}
+
+/* Style des images */
+.image-container img {
+    width: 220px;
+    /* Largeur des images */
+    height: auto;
+    /* Hauteur automatique pour garder le ratio */
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    /* Cadre gris avec 20% de transparence */
+    border-radius: 10px;
+    /* Coins arrondis */
+    padding: 10px;
+    /* Espace entre l’image et le cadre */
+    background-color: transparent;
+    /* Fond du cadre transparent */
+}
