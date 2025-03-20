@@ -53,12 +53,6 @@ h1{
   
 }
 
-.footer img{
-    width: 100px;
-    height: 100px;
-    margin: 50px;
-   
-}
 @media(max-width: 500px){
     
     .photosRestos img{
@@ -67,4 +61,13 @@ h1{
         border-radius: 15px;
         margin: 20px
 }
+
+.icones {
+    display: flex;
+    justify-content: space-around;
+    padding: .50rem;
+    margin: 15px;
+    padding: 50px;
+    min-height: 100px;
+    gap: 20px;
 }
