@@ -1,46 +1,53 @@
+/* Réinitialisation de base */
 * {
     box-sizing: border-box;
-    list-style: none;
-
+    margin: 0;
+    padding: 0;
 }
 
+/* HEADER */
 header {
     text-align: center;
-    min-height: 250px;
+    min-height: 150px;
     background-image: url("image/Photo-Wenov.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-    color: #fff;
-    padding: .5rem;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
-.photosRestos img {
-    height: 400px;
-    width: 330px;
-    border-radius: 15px;
-    margin: 20px
-}
-
+/* SECTION PHOTOS RESTAURANTS */
 .photosRestos {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+    gap: 20px;
+    padding: 100px;
 }
 
-.photosRestos button {
+/* STYLE DES IMAGES */
+.photosRestos img {
+    width: 250px;
+    height: auto;
     border-radius: 15px;
-    border-width: 3px;
-    border-style: hidden;
-    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.photosRestos img:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
 }
 
 .footer-image {
-    width: 100px;
-    height: 100px;
-    margin: 50px;
-    background-repeat: 50px;
+    width: 80px;
+    height: auto;
 }
