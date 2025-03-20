@@ -2,11 +2,13 @@
     box-sizing: border-box;
     list-style: none;
 }
-body{
+
+body {
     background-image: url(image/pexels-timmossholder-1113520.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 header {
     text-align: center;
     min-height: 250px;
@@ -17,16 +19,18 @@ header {
     color: #fff;
     padding: .5rem;
 }
-h1{
+
+h1 {
     font-size: 100px;
     color: rgb(233, 20, 66);
     text-shadow: 0 0 10px rgb(247, 93, 127);
     text-align: center;
-    font-family: "Neonderthaw", cursive;;
+    font-family: "Neonderthaw", cursive;
+    ;
     margin: 50px;
     margin-left: 15%;
     margin-right: 15%;
- }
+}
 
 .photosRestos img {
     height: 400px;
@@ -42,7 +46,7 @@ h1{
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    
+
 }
 
 .photosRestos button {
@@ -50,25 +54,23 @@ h1{
     border-width: 3px;
     border-style: hidden;
     background-color: transparent;
-  
+
 }
 
-@media(max-width: 500px){
-    
-    .photosRestos img{
+@media (max-width: 500px) {
+    .photosRestos img {
         height: 250px;
         width: 200px;
         border-radius: 15px;
         margin: 20px
 }
 }
-
+   
 .icones {
-    display: flex;
-    justify-content: space-around;
-    padding: .50rem;
-    margin: 15px;
-    padding: 50px;
-    min-height: 100px;
-    gap: 20px;
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+        margin: 15px;
+        min-height: 100px;
+        gap: 20px;
 }
