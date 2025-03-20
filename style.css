@@ -38,9 +38,13 @@ header {
     background-color: transparent;
 }
 
-.footer-image {
-    width: 100px;
-    height: 100px;
-    margin: 50px;
-    background-repeat: 50px;
+.icones {
+    display: flex;
+    justify-content: space-around;
+    padding: .50rem;
+    margin: 15px;
+    padding: 50px;
+    min-height: 100px;
+    gap: 20px;
+
 }
