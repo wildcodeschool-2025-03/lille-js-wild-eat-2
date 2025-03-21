@@ -6,7 +6,7 @@
 body {
     background-image: url(image/pexels-timmossholder-1113520.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header {
@@ -22,11 +22,10 @@ header {
 
 h1 {
     font-size: 100px;
-    color: rgb(233, 20, 66);
-    text-shadow: 0 0 10px rgb(247, 93, 127);
+    color: rgb(243, 64, 103);
+    text-shadow: 0 0 20px rgb(247, 146, 168);
     text-align: center;
     font-family: "Neonderthaw", cursive;
-    ;
     margin: 50px;
     margin-left: 15%;
     margin-right: 15%;
@@ -37,6 +36,7 @@ h1 {
     width: 330px;
     border-radius: 15px;
     margin: 20px;
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.384);
 }
 
 .photosRestos {
@@ -54,7 +54,22 @@ h1 {
     border-width: 3px;
     border-style: hidden;
     background-color: transparent;
-
+}
+h2{
+    font-size: 60px;
+    color: rgb(70, 185, 108);
+    text-shadow: 0 0 20px rgb(7, 161, 45);
+    text-align: start;
+    font-family: "Neonderthaw", cursive;
+    margin: 40px;
+    margin-left: 8%;
+}
+p{
+    color: white;
+    font-family: "Winky Sans", sans-serif;
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 @media (max-width: 500px) {
