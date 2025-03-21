@@ -81,18 +81,13 @@ p{
     margin-right: 10%;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 500px){ 
 
-=======
-@media (max-width: 500px) {
-
-    .photosRestos img {
+.photosRestos img {
         height: 250px;
         width: 200px;
         border-radius: 15px;
         margin: 20px
-    }
-}
 }
    
 .icones {
@@ -105,15 +100,6 @@ p{
     /* Ajoute de l'espace entre les icônes */
 }
 
-.icones img {
-    transition: transform 0.3s ease;
-    border-radius: 50%;
-
-}
-
-.icones img:hover {
-    transform: scale(2.2);
-}
 
 .img header {
     transition: transform 0.3s ease;
@@ -130,4 +116,5 @@ p{
         margin: 15px;
         min-height: 100px;
         gap: 20px;
+}
 }
