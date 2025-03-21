@@ -4,7 +4,6 @@
 }
 .imgHeader img{
     width: 150px;
-    height: auto;
     border-radius: 50%;
     margin-top: 20px;
 }
@@ -21,8 +20,6 @@ header {
     background-image: url("image/Photo-Wenov.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-    color: #fff;
     padding: .5rem;
 }
 
@@ -33,15 +30,12 @@ h1 {
     text-align: center;
     font-family: "Neonderthaw", cursive;
     margin: 50px;
-    margin-left: 15%;
-    margin-right: 15%;
 }
 
 .photosRestos img {
     height: 400px;
     width: 330px;
     border-radius: 15px;
-    margin: 20px;
     box-shadow: 0 0 35px rgba(255, 255, 255, 0.384);
 }
 
@@ -65,7 +59,6 @@ h2{
     font-size: 60px;
     color: rgb(70, 185, 108);
     text-shadow: 0 0 20px rgb(7, 161, 45);
-    text-align: start;
     font-family: "Neonderthaw", cursive;
     margin: 40px;
     margin-left: 8%;
@@ -73,9 +66,26 @@ h2{
 p{
     color: white;
     font-family: "Winky Sans", sans-serif;
-    margin: 10px;
+    margin: 20px;
     margin-left: 10%;
     margin-right: 10%;
+}
+.icones {
+    
+    display: flex;
+    gap: 20px;
+}
+
+footer img {
+    transition: transform 0.3s ease;
+    border-radius: 80%;
+    margin: 15px;
+    width:50px;
+    aspect-ratio: 1;
+}
+
+footer img:hover {
+    transform: scale(1.4);
 }
 
 @media(max-width: 500px){ 
@@ -88,25 +98,3 @@ p{
 }
 }
    
-.icones {
-    
-    display: flex;
-    gap: 20px;
-    /* Ajoute de l'espace entre les icônes */
-}
-
-
-footer img {
-    transition: transform 0.3s ease;
-    border-radius: 80%;
-    margin: 15px;
-    gap: 20px;
-
-    width:50px;
-    aspect-ratio: 1;
-
-}
-
-footer img:hover {
-    transform: scale(1.4);
-}
