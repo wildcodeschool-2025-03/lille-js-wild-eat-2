@@ -20,6 +20,15 @@ header {
     padding: .5rem;
 }
 
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+
+
 h1 {
     font-size: 100px;
     color: rgb(243, 64, 103);
@@ -72,16 +81,49 @@ p{
     margin-right: 10%;
 }
 
+@media(max-width: 500px) {
+
+=======
 @media (max-width: 500px) {
+
     .photosRestos img {
         height: 250px;
         width: 200px;
         border-radius: 15px;
         margin: 20px
+    }
 }
 }
    
 .icones {
+
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 20px;
+    /* Ajoute de l'espace entre les icônes */
+}
+
+.icones img {
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+
+}
+
+.icones img:hover {
+    transform: scale(2.2);
+}
+
+.img header {
+    transition: transform 0.3s ease;
+    border-radius: 80%;
+
+}
+
+.img header:hover {
+    transform: scale(4.4);
+
         display: flex;
         justify-content: space-around;
         padding: 50px;
