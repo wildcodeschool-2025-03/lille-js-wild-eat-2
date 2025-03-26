@@ -12,10 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+ 
 </head>
 <body>
     <header class="imgHeader">
+
       <img src="image/image header.jpg" alt="photo">
+      
+
     </header>
     
     <main>
@@ -23,19 +27,19 @@
     
     <h1>contact </h1>
     
-        <form id="formulaire">
-            <ul> 
+        <form id="form">
+           <div class="formList">
             <h3>formulaire</h3>
-                <li>
+               
                     <label id="yourName">Prénom <input type="text" id="firstName, name"> </label>
-                </li>
-                <li>
+            
+             
                     <label id="birthDate">Votre date de naissance  : <input type="date"></label>
-                </li>
-                <li>
+                
+           
                     <label id="yourEmail">Votre Email  : <input type="email" required></label>
-                </li>
-                <li>
+                
+              
                     <label for="raestaurant-select">De quel restaurant parlez vous ?</label>
                         <select name="restaurant" id="resto-select">
                             <option value="">--Choisissez un restaurant--</option>
@@ -44,16 +48,17 @@
                             <option value="restaurant3">resto 3</option>
                             <option value="restaurant4">resto 4</option>
                         </select>
-                </li>
-                <li id="texteAreaZone">
+                
+                
                     <label id="tourText">Donnez votre avis : 
                         <textarea id ="texteZone" name="yourText" rows="10" cols="50" maxlength="500" wrap placeholder="tapez votre message ici..."></textarea>
                     </label>
-                </li>
-                <li>
-                    <button id="formulaireButton">validez</button>
-                </li>    
-            </ul>    
+               
+                
+                    <div id="message"></div>
+                    <button id="formButton">validez</button>
+           </div>     
+                
         </form>
     </main>
     
@@ -74,6 +79,6 @@
             <img src="https://avatars.githubusercontent.com/u/200201178?v=4" alt="lien vers le profil de jerome">
         </a>
     </footer>
-    <script src="main.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>
