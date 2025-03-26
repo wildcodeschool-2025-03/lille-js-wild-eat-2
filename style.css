@@ -1,44 +1,136 @@
 /* Réinitialisation de base */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* HEADER */
-header {
+/* Style de l'en-tête */
+.header {
     text-align: center;
-    min-height: 150px;
-    background-image: url("image/Photo-Wenov.jpg");
+    /* Centrer le texte horizontalement */
+    margin-bottom: 20px;
+    /* Ajouter de l'espace entre l'en-tête et le carrousel */
+}
+
+/* Wild Eats */
+.wild-eats {
+    font-size: 36px;
+    /* Agrandir la taille de police */
+    color: #333;
+    /* Couleur du texte */
+    font-weight: bold;
+    /* Gras */
+    margin: 0;
+    /* Supprimer les marges par défaut */
+}
+
+/* Mise en page générale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* Réduit la marge autour de la page */
+}
+
+/* Conteneur principal */
+.carrousel-container {
+    position: relative;
+    width: 90%;
+    /* Augmenté à 90% de la largeur de l'écran */
+    max-width: 1200px;
+    /* Augmenté à 1200px pour que le conteneur soit plus large */
+    height: 500px;
+    padding: 20px;
+    /* Ajouté pour de l'espace autour du contenu */
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+}
+
+/* Image de fond */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    transition: background 0.5s ease-in-out;
 }
 
-/* SECTION PHOTOS RESTAURANTS */
-.photosRestos {
+/* Description du restaurant affiché en fond */
+.description {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.details {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Carrousel */
+.carrousel {
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
-    padding: 100px;
 }
 
-/* STYLE DES IMAGES */
-.photosRestos img {
-    width: 250px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+/* Images du carrousel */
+.carrousel img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.photosRestos img:hover {
-    transform: scale(1.05);
+.carrousel img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Boutons de navigation */
+button {
+    position: absolute;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
 }
 
 /* FOOTER */

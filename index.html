@@ -11,19 +11,38 @@
 <body>
 
     <header>
-        <h1>Nos Restaurants</h1>
+        <h1>Wild Eats</h1>
     </header>
 
-    <section class="photosRestos">
-        <img src="image/pexels-igor-starkov-233202-1055058.jpg" alt="Restaurant 1">
-        <img src="image/pexels-igor-starkov-233202-914388.jpg" alt="Restaurant 2">
-        <img src="image/pexels-naimbic-2290753.jpg" alt="Restaurant 3">
-        <img src="image/pexels-valeriya-1199957.jpg" alt="Restaurant 4">
+    <section class="carrousel-container">
+        <!-- Image de fond + descriptif -->
+        <div class="background">
+            <p class="description">Nom du restaurant</p>
+            <p class="details">Description détaillée du restaurant</p>
+        </div>
+
+        <!-- Carrousel avec les 3 images visibles -->
+        <div class="carrousel">
+            <img src="image/restau-1.jpg" alt="Restaurant 1" class="image active" data-name="Restaurant 1"
+                data-description="Cuisine gastronomique, vue panoramique.">
+            <img src="image/restau-2.jpg" alt="Restaurant 2" class="image" data-name="Restaurant 2"
+                data-description="Ambiance cosy, spécialités italiennes.">
+            <img src="image/restau-3.jpg" alt="Restaurant 3" class="image" data-name="Restaurant 3"
+                data-description="Buffet à volonté, desserts maison.">
+            <img src="image/restau-4.jpg" alt="Restaurant 4" class="image" data-name="Restaurant 4"
+                data-description="Street food asiatique, ambiance moderne.">
+        </div>
+
+        <!-- Boutons pour naviguer -->
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
     </section>
 
     <footer>
-        <img class="footer-image" src="image/" alt="Logo du site">
+        <img class="footer-image" src="image/logo wild.jpg" alt="Logo du site">
     </footer>
+
+    <script src="main.js"></script>
 
 </body>
 
