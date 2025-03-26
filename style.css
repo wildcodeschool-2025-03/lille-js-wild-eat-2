@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url(image/pexels-timmossholder-1113520.jpg);
+    /*background-image: url(image/pexels-timmossholder-1113520.jpg);*/
     background-size: cover;
     background-position: center;
 }
@@ -25,13 +25,58 @@ header {
 
 h1 {
     font-size: 100px;
-    color: rgb(243, 64, 103);
-    text-shadow: 0 0 20px rgb(247, 146, 168);
+    color: rgb(231, 85, 85);
     text-align: center;
-    font-family: "Neonderthaw", cursive;
+    font-family: "Winky Sans", sans-serif;
     margin: 50px;
 }
+/* ------------------------"style for formulaire page"----ne pas toucher please------------------*/
+#formulaire ul{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Winky Sans", sans-serif;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: greenyellow;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 15px;
+}
+#formulaire h3{
+    font-size: 24px;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    border-radius: 10px;
+}
+#formulaire input{
+    border-radius: 10px;
+    text-align: center;
+}
+#resto-select{
+    border-radius: 10px;
+}
 
+#tourText{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+#formulaireButton{
+
+    border-radius: 10px;
+    width: 150px;
+
+}
+
+/*------------------------------------------------------------------------------------------*/
 .photosRestos img {
     height: 400px;
     width: 330px;
@@ -57,14 +102,13 @@ h1 {
 }
 h2{
     font-size: 60px;
-    color: rgb(70, 185, 108);
-    text-shadow: 0 0 20px rgb(7, 161, 45);
-    font-family: "Neonderthaw", cursive;
+    color: rgb(36, 136, 69);
+    font-family: "Winky Sans", sans-serif;
     margin: 40px;
     margin-left: 8%;
 }
 p{
-    color: white;
+    color: rgb(5, 5, 5);
     font-family: "Winky Sans", sans-serif;
     margin: 20px;
     margin-left: 10%;
@@ -88,7 +132,7 @@ footer img:hover {
     transform: scale(1.4);
 }
 
-@media(max-width: 500px){ 
+@media(max-width: 487px){ 
 
 .photosRestos img {
         height: 250px;
