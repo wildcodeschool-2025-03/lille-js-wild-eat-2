@@ -1,4 +1,3 @@
-/* Réinitialisation de base */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,6 @@
 }
 
 
-/* Mise en page générale */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -15,15 +13,13 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    /* Réduit la marge autour de la page */
+
 }
 
 .carrousel-container {
     position: relative;
     width: 90%;
-    /* Augmenté à 90% de la largeur de l'écran */
     max-width: 1500px;
-    /* Augmenté à 1500px pour que le conteneur soit plus large */
     height: 500px;
     padding: 20px;
     background-color: #fff;

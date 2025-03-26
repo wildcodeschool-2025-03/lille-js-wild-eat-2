@@ -1,4 +1,3 @@
-// Selector
 const background = document.querySelector(".background");
 const description = document.querySelector(".description");
 const details = document.querySelector(".details");
@@ -13,7 +12,6 @@ const restaurants = [
     { image: "image/image-6.avif", description: "Restaurant Vegan - Healthy & Bio", details: "Des plats gourmands et sains, 100% végétaux et bio." }
 ];
 
-// Empêche les clics trop rapides
 let currentIndex = 0;
 let isTransitioning = false;
 
@@ -47,7 +45,7 @@ function updateCarrousel() {
     }
 }
 
-// bouton next
+
 nextBtn.addEventListener("click", () => {
     if (isTransitioning) return;
     isTransitioning = true;
@@ -61,7 +59,7 @@ nextBtn.addEventListener("click", () => {
     }, 500);
 });
 
-// pouton prev
+
 prevBtn.addEventListener("click", () => {
     if (isTransitioning) return;
     isTransitioning = true;
@@ -75,7 +73,7 @@ prevBtn.addEventListener("click", () => {
     }, 500);
 });
 
-// Initialisation carou qui se vide( pour ne pas avoir 4 images +background)
+
 updateBackground();
 carrouselContainer.innerHTML = "";
 updateCarrousel();
