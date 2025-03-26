@@ -17,9 +17,9 @@ const restaurants = [
 let currentIndex = 0;
 let isTransitioning = false;
 
-// Mise à jour de l'affichage principal
+
 function updateBackground() {
-    background.classList.add("fade-in"); // Ajout de l'animation
+    background.classList.add("fade-in"); // Transition 
     background.style.backgroundImage = `url(${restaurants[currentIndex].image})`;
     description.textContent = restaurants[currentIndex].description;
     details.textContent = restaurants[currentIndex].details;
@@ -29,7 +29,7 @@ function updateBackground() {
     }, 500); // Retire l'effet après 500ms
 }
 
-// Maj du carrousel
+
 function updateCarrousel() {
     carrouselContainer.innerHTML = ""; // Vide le carrousel
 
@@ -40,14 +40,14 @@ function updateCarrousel() {
         img.alt = `Image du restaurant ${nextIndex + 1}`;
         img.classList.add("image");
 
-        // Ajoute la classe active si c'est l'image principale
+        // background si c'est l'image principale
         if (i === 0) img.classList.add("active");
 
         carrouselContainer.appendChild(img);
     }
 }
 
-// Gestion du bouton NEXT
+// bouton next
 nextBtn.addEventListener("click", () => {
     if (isTransitioning) return;
     isTransitioning = true;
@@ -61,7 +61,7 @@ nextBtn.addEventListener("click", () => {
     }, 500);
 });
 
-// Gestion du bouton PREV
+// pouton prev
 prevBtn.addEventListener("click", () => {
     if (isTransitioning) return;
     isTransitioning = true;
@@ -75,7 +75,7 @@ prevBtn.addEventListener("click", () => {
     }, 500);
 });
 
-// Initialisation carou qui se vide"
+// Initialisation carou qui se vide( pour ne pas avoir 4 images +background)
 updateBackground();
 carrouselContainer.innerHTML = "";
 updateCarrousel();

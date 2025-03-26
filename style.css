@@ -5,25 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Style de l'en-tête */
-.header {
-    text-align: center;
-    /* Centrer le texte horizontalement */
-    margin-bottom: 20px;
-    /* Ajouter de l'espace entre l'en-tête et le carrousel */
-}
-
-/* Wild Eats */
-.wild-eats {
-    font-size: 36px;
-    /* Agrandir la taille de police */
-    color: #333;
-    /* Couleur du texte */
-    font-weight: bold;
-    /* Gras */
-    margin: 0;
-    /* Supprimer les marges par défaut */
-}
 
 /* Mise en page générale */
 body {
@@ -37,23 +18,20 @@ body {
     /* Réduit la marge autour de la page */
 }
 
-/* Conteneur principal */
 .carrousel-container {
     position: relative;
     width: 90%;
     /* Augmenté à 90% de la largeur de l'écran */
-    max-width: 1200px;
-    /* Augmenté à 1200px pour que le conteneur soit plus large */
+    max-width: 1500px;
+    /* Augmenté à 1500px pour que le conteneur soit plus large */
     height: 500px;
     padding: 20px;
-    /* Ajouté pour de l'espace autour du contenu */
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: visible;
 }
 
-/* Image de fond */
 .background {
     position: absolute;
     top: 0;
@@ -71,7 +49,6 @@ body {
     transition: background 0.5s ease-in-out;
 }
 
-/* Description du restaurant affiché en fond */
 .description {
     font-size: 24px;
     font-weight: bold;
@@ -92,7 +69,7 @@ body {
     gap: 20px;
 }
 
-/* Images du carrousel */
+
 .carrousel img {
     width: 120px;
     height: 150px;
@@ -107,7 +84,7 @@ body {
     opacity: 0.8;
 }
 
-/* Boutons de navigation */
+
 button {
     position: absolute;
     bottom: 10px;
@@ -133,7 +110,7 @@ button:hover {
     right: 20px;
 }
 
-/* FOOTER */
+
 footer {
     text-align: center;
     padding: 20px;
