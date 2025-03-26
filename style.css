@@ -97,4 +97,61 @@ footer img:hover {
         margin: 20px
 }
 }
-   
+  
+.Burgerbutton{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    background-color:rgb(121, 119, 119);
+    padding-top: 60px;
+    transition: right 0.5s ease;
+}
+
+.Burgerbutton a {
+
+    padding: 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(238, 184, 184);
+    display: block;
+    transition: 0.3s;
+}
+
+.Burgerbutton a:hover{
+    color:black;
+} 
+
+.Burgerbutton ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.Burgerbutton.active{
+    right: 0;
+}
+
+.Burgerbutton.close{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+}
+.burger-icon span{
+display: block;
+width: 35px;
+height: 5px;
+background-color: cyan;
+margin: 6px 0;
+}
+
+.burger-icon{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
