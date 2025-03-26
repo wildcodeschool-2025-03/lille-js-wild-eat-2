@@ -6,43 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie Restaurants</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Wild Eats</h1>
-    </header>
+    <div id="burgerbutton" class="Burgerbutton">
+        <a id="closeBtn" class="close">x</a>
+        <ul>
+            <li>
+                <a href=index.html>Index</a>
+            </li>
+            <a href=contact.html>Contact</a>
+            </li>
+            <a href=about.html>About</a>
+            </li>
+        </ul>
+    </div>
 
-    <section class="carrousel-container">
-        <div class="background">
-            <p class="description">Nom du restaurant</p>
-            <p class="details">Description détaillée du restaurant</p>
-        </div>
+    <a href="#" id="openBtn">
+        <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </a>
+
+    <body>
+
+        <header class="imgHeader">
+            <img src="image/image header.jpg" alt="photo">
+        </header>
 
 
-        <div class="carrousel">
-            <img src="image/restau-1.jpg" alt="Restaurant 1" class="image active" data-name="Restaurant 1"
-                data-description="Cuisine gastronomique, vue panoramique.">
-            <img src="image/restau-2.jpg" alt="Restaurant 2" class="image" data-name="Restaurant 2"
-                data-description="Ambiance cosy, spécialités italiennes.">
-            <img src="image/restau-3.jpg" alt="Restaurant 3" class="image" data-name="Restaurant 3"
-                data-description="Buffet à volonté, desserts maison.">
-            <img src="image/restau-4.jpg" alt="Restaurant 4" class="image" data-name="Restaurant 4"
-                data-description="Street food asiatique, ambiance moderne.">
-        </div>
+        <main>
+
+            <h1 id="mainTittle"> wild "eat"</h1>
 
 
-        <button class="prev">&lt;</button>
-        <button class="next">&gt;</button>
-    </section>
+            <ul class="photosRestos">
 
-    <footer>
-        <img class="footer-image" src="image/logo wild.jpg" alt="Logo du site">
-    </footer>
+                <li>
+                    <a href="https://kokpiraat.fr/"><img src="image/pexels-igor-starkov-233202-914388.jpg"
+                            alt="Resto1"></a>
+                </li>
+                <li>
+                    <a href="https://restaurants.bagelcorner.fr/"><img
+                            src="image/pexels-igor-starkov-233202-1055058.jpg" alt="resto2"></a>
+                </li>
+                <li>
+                    <a href="https://lequailambersart-restaurant.com/"><img src="image/pexels-naimbic-2290753.jpg"
+                            alt="resto3"></a>
+                </li>
+                <li>
+                    <a href="https://pekopeko.fr/"><img src="image/pexels-valeriya-1199957.jpg" alt="resto4"></a>
+                </li>
+            </ul>
+            <h2> " Notre Choix "</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, odit quam animi autem sit adipisci
+                deleniti et in magnam aut tenetur molestiae pariatur velit! Ducimus harum expedita distinctio aspernatur
+                perferendis!
+                Dolore ratione in cumque neque et, expedita laboriosam exercitationem optio odit aspernatur vero
+                incidunt deserunt aliquid harum doloremque quaerat! Aliquid sapiente iste harum quas ipsum aperiam
+                tempora iure quia magni.
+                Magni aspernatur aperiam ullam! Possimus neque eveniet fugiat minima, voluptatum inventore odit sequi
+                doloribus tempora delectus labore earum doloremque mollitia numquam ab ratione. Quo cum soluta, tenetur
+                laboriosam error voluptatibus.
+                Numquam beatae hic, tempora asperiores nostrum qui temporibus natus inventore perspiciatis fugit
+                adipisci earum maxime sed assumenda animi minima, eligendi eaque veniam itaque consequuntur architecto
+                soluta deserunt! Ipsam, officia fuga.
+                Consectetur placeat eaque dignissimos quis saepe asperiores aut, culpa modi quidem, totam beatae, quia
+                impedit quaerat autem tempora. Tempore natus cum a illum itaque, saepe necessitatibus explicabo adipisci
+                blanditiis ad.
+                Distinctio illum deserunt ab ipsum animi voluptatum quis. Facilis, vel? Perferendis expedita officia
+                corporis ipsa nulla eos! </p>
+        </main>
 
-    <script src="main.js"></script>
+        <footer class="icones">
+            <a href="https://github.com/salah-hnt" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/181408278?v=4&size=64" alt="lien vers mon profil">
+            </a>
+            <a href="https://github.com/ChrisG-WCS" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/201600440?v=4"
+                    alt="lien vers le profils de christophe">
+            </a>
+            <a href="https://github.com/Jerome0510" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/200201178?v=4" alt="lien vers le profil de jerome">
+            </a>
+        </footer>
 
-</body>
+        <script src="main.js"></script>
+
+    </body>
 
 </html>
