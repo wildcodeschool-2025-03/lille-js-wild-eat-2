@@ -163,7 +163,7 @@ h2{
     opacity: 0.8;
 }
 
-button {
+.next, .prev  {
     position: absolute;
     bottom: 10px;
     background: rgba(0, 0, 0, 0.6);
