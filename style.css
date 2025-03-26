@@ -7,11 +7,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
 .carrousel-container {
@@ -24,6 +19,11 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: visible;
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
 }
 
 .background {
@@ -101,12 +101,103 @@ button:hover {
 
 .next {
     right: 20px;
-
 }
 
 footer {
     text-align: center;
     padding: 20px;
+}
+
+
+p {
+    color: white;
+    font-family: "Winky Sans", sans-serif;
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.icones {
+    display: flex;
+    gap: 20px;
+}
+
+footer img {
+    transition: transform 0.3s ease;
+    border-radius: 80%;
+    margin: 15px;
+    width: 50px;
+    aspect-ratio: 1;
+}
+
+footer img:hover {
+    transform: scale(1.4);
+}
+
+@media(max-width: 500px) {
+    .photosRestos img {
+        height: 250px;
+        width: 200px;
+        border-radius: 15px;
+        margin: 20px;
+    }
+}
+
+.Burgerbutton {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    background-color: rgb(121, 119, 119);
+    padding-top: 60px;
+    transition: right 0.5s ease;
+}
+
+.Burgerbutton a {
+    padding: 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(238, 184, 184);
+    display: block;
+    transition: 0.3s;
+}
+
+.Burgerbutton a:hover {
+    color: black;
+}
+
+.Burgerbutton ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Burgerbutton.active {
+    right: 0;
+}
+
+.Burgerbutton.close {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+}
+
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: cyan;
+    margin: 6px 0;
+}
+
+.burger-icon {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
 }
 
 .footer-image {
