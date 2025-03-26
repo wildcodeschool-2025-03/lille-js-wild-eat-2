@@ -17,7 +17,7 @@ let isTransitioning = false;
 
 
 function updateBackground() {
-    background.classList.add("fade-in"); // Transition 
+    background.classList.add("fade-in");
     background.style.backgroundImage = `url(${restaurants[currentIndex].image})`;
     description.textContent = restaurants[currentIndex].description;
     details.textContent = restaurants[currentIndex].details;
@@ -39,6 +39,7 @@ function updateCarrousel() {
         img.classList.add("image");
 
         // background si c'est l'image principale
+
         if (i === 0) img.classList.add("active");
 
         carrouselContainer.appendChild(img);
