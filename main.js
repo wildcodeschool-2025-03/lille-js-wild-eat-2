@@ -6,10 +6,10 @@ const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 
 const restaurants = [
-    { image: "image/restau-1.jpg", description: "Restaurant Italien - Pâtes fraîches & Pizza au feu de bois", details: "Un coin chaleureux pour déguster une vraie cuisine italienne." },
-    { image: "image/restau-2.jpg", description: "Restaurant Japonais - Sushi & Ramen", details: "Des sushis faits main et des ramen authentiques, un vrai voyage au Japon !" },
-    { image: "image/restau-3.jpg", description: "Restaurant Français - Gastronomie & Tradition", details: "Savourez des plats raffinés dans une ambiance élégante." },
-    { image: "image/image-6.avif", description: "Restaurant Vegan - Healthy & Bio", details: "Des plats gourmands et sains, 100% végétaux et bio." }
+    { image: "image/Pepe.webp", description: "Pepe Chicken by FastGood Cuisine", details: "Le poulet rôti gourmand et savoureux qui réveille tes papilles à chaque bouchée.", },
+    { image: "image/Marta.jpg", description: "Marta Lille - Restaurant trendy de la vie lilloise", details: "Une cuisine raffinée et audacieuse, parfaite pour une pause gourmande." },
+    { image: "image/La-famille.jpg", description: "La Famille, Finest Lunch - Restaurants - Traiteur - Cantine", details: "Une cuisine conviviale et généreuse, comme à la maison, mais en mieux." },
+    { image: "image/LeBarboteur.jpg", description: "Le Barboteur–Restaurant & Bar, Quai de l'Ouest Lille", details: "Le resto au bord de l’eau qui va faire vibrer vos papilles !" },
 ];
 
 let currentIndex = 0;
@@ -24,7 +24,7 @@ function updateBackground() {
 
     setTimeout(() => {
         background.classList.remove("fade-in");
-    }, 500); // Retire l'effet après 500ms
+    }, 500);
 }
 
 
