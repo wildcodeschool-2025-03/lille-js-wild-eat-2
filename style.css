@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+header {
+    text-align: center;
+    min-height: 250px;
+    background-image: url("image/Photo-Wenov.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: .5rem;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -49,6 +57,115 @@ body {
     font-size: 16px;
     margin-top: 10px;
 }
+/* ------------------------"style for form page"----ne pas toucher please------------------*/
+.index2Body{
+    background-image: url(image/Resto-contact-page.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#index2Contact{
+    font-size: 100px;
+    color: aliceblue;
+    text-align: center;
+    font-family: "Winky Sans", sans-serif;
+    margin: 20%;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+#divider{
+    background-color: aliceblue;
+    height: 65vh;
+    width: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.formList {
+    margin-top: 10vh;
+    margin-bottom: 18vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Winky Sans", sans-serif;
+    color: #bab8bb;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    backdrop-filter: blur(12px) saturate(140%);
+    background-color: rgba(17,25,40,0.75);
+    border: 1px solid rgba(255,255,255,0125);
+    border-radius: 12px;
+    padding: 15px;
+}
+.inputList{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    gap: 20px;
+}
+
+#form h3{
+    font-size: 24px;
+}
+textarea{
+    font-size: 16px;
+    font-family: "Winky Sans", sans-serif;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    resize: none;
+    width: 100%;
+    border-radius: 10px;
+}
+#form input{
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    background-color: transparent;
+    border-color: white;
+    width: 320px;
+    height: 32px;
+}
+#resto-select{
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 10px;
+    width: 320px;
+    height: 32px;
+    text-align: center;
+}
+
+#tourText{
+    text-align: center;
+}
+#formButton{
+    font-family: "Winky Sans", sans-serif;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+#message{
+    font-family: "Winky Sans", sans-serif;
+    color: rgb(45, 141, 109);
+    font-size: 24px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+.photosRestos img {
+    height: 400px;
+    width: 330px;
+    border-radius: 15px;
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.384);
+}
 
 .carrousel {
     position: absolute;
@@ -69,12 +186,25 @@ body {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.photosRestos button {
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: hidden;
+    background-color: transparent;
+}
+h2{
+    font-size: 60px;
+    color: rgb(36, 136, 69);
+    font-family: "Winky Sans", sans-serif;
+    margin: 40px;
+    margin-left: 8%;
+}
 .carrousel img:hover {
     transform: scale(1.1);
     opacity: 0.8;
 }
 
-button {
+.next, .prev  {
     position: absolute;
     bottom: 280px;
     background: rgba(0, 0, 0, 0.6);
@@ -89,6 +219,7 @@ button {
 
 button:hover {
     background: rgba(0, 0, 0, 0.8);
+    color: #f4f4f4;
 }
 
 .prev {
@@ -103,7 +234,9 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
+p{
+    color: rgb(5, 5, 5);
+}
 
 p {
     color: white;
@@ -131,13 +264,16 @@ footer img:hover {
 }
 
 @media(max-width: 500px) {
-    .photosRestos img {
-        height: 250px;
-        width: 200px;
-        border-radius: 15px;
-        margin: 20px;
+
+.photosRestos img {        
+    height: 250px;
+    width: 200px;
+    border-radius: 15px;
+    margin: 20px;
     }
 }
+
+   
 
 .Burgerbutton {
     height: 100%;
@@ -202,28 +338,87 @@ footer img:hover {
 }
 
 @media (max-width: 1200px) {
-
-
+    .carrousel-container {
+        height: 450px;
+    }
     .carrousel img {
         width: 100px;
         height: 120px;
     }
-
     .background {
         padding: 15px;
     }
-
     .description {
         font-size: 22px;
     }
-
     .details {
         font-size: 14px;
     }
-
     .carrousel {
         bottom: -60px;
     }
+    .formList {
+        margin-top: 10vh;
+        margin-bottom: 18vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: "Winky Sans", sans-serif;
+        color: #bab8bb;
+        font-size: 16px;
+        margin-left: 2%;
+        margin-right: 2%;
+        backdrop-filter: blur(12px) saturate(140%);
+        background-color: rgba(17,25,40,0.75);
+        border: 1px solid rgba(255,255,255,0125);
+        border-radius: 12px;
+        padding: 10px;
+}
+    #index2Contact{
+        font-size: 70px;
+        color: aliceblue;
+        text-align: center;
+        font-family: "Winky Sans", sans-serif;
+        margin: 20%;
+        margin-left: 2vh;
+     margin-right: 2vh;
+    }
+}
+@media (max-width: 850px) {
+    #index2Contact{
+        font-size: 50px;
+        color: aliceblue;
+        text-align: center;
+        font-family: "Winky Sans", sans-serif;
+        margin: 20%;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    .formList {
+        margin-top: 10vh;
+        margin-bottom: 18vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Winky Sans", sans-serif;
+        color: #bab8bb;
+        font-size: 14px;
+        margin-left: 5%;
+        margin-right: 5%;
+        backdrop-filter: blur(12px) saturate(140%);
+        background-color: rgba(17,25,40,0.75);
+        border: 1px solid rgba(255,255,255,0125);
+        border-radius: 12px;
+        padding: 15px;
+}
+#divider{
+    background-color: aliceblue;
+    height: 2px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
 }
 
 @media (max-width: 768px) {
@@ -257,6 +452,15 @@ footer img:hover {
         font-size: 18px;
         padding: 8px 12px;
     }
+    .inputList{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 5%;
+        margin-right: 15%;
+        margin-left: 15%;
+        gap: 20px;
+}
 }
 
 @media (max-width: 480px) {
