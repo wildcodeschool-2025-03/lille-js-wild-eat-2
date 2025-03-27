@@ -12,13 +12,6 @@ header {
     padding: .5rem;
 }
 
-h1 {
-    font-size: 100px;
-    color: rgb(231, 85, 85);
-    text-align: center;
-    font-family: "Winky Sans", sans-serif;
-    margin: 50px;
-}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -68,22 +61,56 @@ body {
     margin-top: 10px;
 }
 /* ------------------------"style for form page"----ne pas toucher please------------------*/
+.index2Body{
+    background-image: url(image/Resto-contact-page.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#index2Contact{
+    font-size: 100px;
+    color: aliceblue;
+    text-align: center;
+    font-family: "Winky Sans", sans-serif;
+    margin: 20%;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+#divider{
+    background-color: aliceblue;
+    height: 65vh;
+    width: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
 .formList {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 10vh;
+    margin-bottom: 18vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     font-family: "Winky Sans", sans-serif;
+    color: #bab8bb;
     font-size: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color: greenyellow;
-    border-style: solid;
-    border-color: black;
-    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    backdrop-filter: blur(12px) saturate(140%);
+    background-color: rgba(17,25,40,0.75);
+    border: 1px solid rgba(255,255,255,0125);
+    border-radius: 12px;
     padding: 15px;
 }
+.inputList{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    gap: 20px;
+}
+
 #form h3{
     font-size: 24px;
 }
@@ -95,22 +122,24 @@ textarea{
 #form input{
     border-radius: 10px;
     text-align: center;
+    width: 320px;
 }
 #resto-select{
     border-radius: 10px;
+    width: 320px;
+    text-align: center;
 }
 
 #tourText{
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
 }
 #formButton{
 
     border-radius: 10px;
     width: 150px;
+    height: 40px;
 }
+
 #message{
     font-family: "Winky Sans", sans-serif;
     color: rgb(45, 141, 109);
@@ -178,6 +207,7 @@ h2{
 
 button:hover {
     background: rgba(0, 0, 0, 0.8);
+    color: #f4f4f4;
 }
 
 .prev {
@@ -315,6 +345,68 @@ footer img:hover {
     .carrousel {
         bottom: -60px;
     }
+    .formList {
+        margin-top: 10vh;
+        margin-bottom: 18vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: "Winky Sans", sans-serif;
+        color: #bab8bb;
+        font-size: 16px;
+        margin-left: 2%;
+        margin-right: 2%;
+        backdrop-filter: blur(12px) saturate(140%);
+        background-color: rgba(17,25,40,0.75);
+        border: 1px solid rgba(255,255,255,0125);
+        border-radius: 12px;
+        padding: 10px;
+}
+    #index2Contact{
+        font-size: 70px;
+        color: aliceblue;
+        text-align: center;
+        font-family: "Winky Sans", sans-serif;
+        margin: 20%;
+        margin-left: 2vh;
+     margin-right: 2vh;
+    }
+}
+@media (max-width: 850px) {
+    #index2Contact{
+        font-size: 50px;
+        color: aliceblue;
+        text-align: center;
+        font-family: "Winky Sans", sans-serif;
+        margin: 20%;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    .formList {
+        margin-top: 10vh;
+        margin-bottom: 18vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Winky Sans", sans-serif;
+        color: #bab8bb;
+        font-size: 14px;
+        margin-left: 5%;
+        margin-right: 5%;
+        backdrop-filter: blur(12px) saturate(140%);
+        background-color: rgba(17,25,40,0.75);
+        border: 1px solid rgba(255,255,255,0125);
+        border-radius: 12px;
+        padding: 15px;
+}
+#divider{
+    background-color: aliceblue;
+    height: 2px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
 }
 
 @media (max-width: 768px) {
@@ -348,6 +440,15 @@ footer img:hover {
         font-size: 18px;
         padding: 8px 12px;
     }
+    .inputList{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 5%;
+        margin-right: 15%;
+        margin-left: 15%;
+        gap: 20px;
+}
 }
 
 @media (max-width: 480px) {
