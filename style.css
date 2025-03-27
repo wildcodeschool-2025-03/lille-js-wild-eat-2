@@ -50,6 +50,33 @@ body {
     margin-top: 10px;
 }
 
+.restaurant-logo img {
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+}
+
+.restaurant-logo.famille {
+    top: 10px;
+    left: 15px;
+}
+
+.restaurant-logo.barbauteur {
+    top: 10px;
+    right: 15px;
+}
+
+.restaurant-logo.fafa {
+    bottom: 10px;
+    left: 15px;
+}
+
+.restaurant-logo.pepe {
+    bottom: 10px;
+    right: 15px;
+}
+
 .carrousel {
     position: absolute;
     bottom: 50px;
@@ -206,4 +233,19 @@ footer img:hover {
 .footer-image {
     width: 80px;
     height: auto;
+}
+
+
+.restaurant-icon {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.restaurant-logo {
+    position: absolute;
+
 }
