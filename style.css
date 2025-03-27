@@ -54,7 +54,7 @@ body {
     position: absolute;
     bottom: 50px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(50%);
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -222,7 +222,7 @@ footer img:hover {
     }
 
     .carrousel {
-        bottom: -60px;
+        bottom: 60px;
     }
 }
 
@@ -250,7 +250,7 @@ footer img:hover {
     }
 
     .carrousel {
-        bottom: -50px;
+        bottom: 60px;
     }
 
     button {
