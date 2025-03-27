@@ -83,7 +83,7 @@ body {
 
 .formList {
     margin-top: 10vh;
-    margin-bottom: 18vh;
+    margin-bottom: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -158,6 +158,10 @@ textarea{
     color: rgb(45, 141, 109);
     font-size: 24px;
 }
+#textAbout{
+
+    font-size: 24px;
+}
 
 /*------------------------------------------------------------------------------------------*/
 .photosRestos img {
@@ -194,9 +198,9 @@ textarea{
 }
 h2{
     font-size: 60px;
-    color: rgb(36, 136, 69);
+    color: white;
     font-family: "Winky Sans", sans-serif;
-    margin: 40px;
+    margin: 2vh;
     margin-left: 8%;
 }
 .carrousel img:hover {
@@ -326,7 +330,7 @@ footer img:hover {
 }
 
 .burger-icon {
-    position: fixed;
+    position: absolute;
     right: 20px;
     top: 20px;
     cursor: pointer;
@@ -396,7 +400,7 @@ footer img:hover {
     }
     .formList {
         margin-top: 10vh;
-        margin-bottom: 18vh;
+        margin-bottom: 6vh;
         display: flex;
         flex-direction: column;
         align-items: center;
