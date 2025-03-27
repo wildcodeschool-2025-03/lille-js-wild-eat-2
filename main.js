@@ -35,7 +35,8 @@ function updateCarrousel() {
     for (let i = 0; i < 3; i++) {
         let nextIndex = (currentIndex + i) % restaurants.length;
         let img = document.createElement("img");
-        img.src = restaurants[nextIndex].image;
+        const link =
+            img.src = restaurants[nextIndex].image;
         img.alt = `Image du restaurant ${nextIndex + 1}`;
         img.classList.add("image");
 
