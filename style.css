@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
     color: inherit;
-=======
     scroll-behavior: smooth;
->>>>>>> 88c625b290511c238d22fe1571d6d4ab9c347873
+
 }
 header {
     text-align: center;
