@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="FR-fr">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wild eats</title>
+    <title>Galerie Restaurants</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,47 +19,67 @@
 </head>
 
 <body>
-
-<div id="burgerbutton" class="Burgerbutton">
-    <a id ="closeBtn" class="close">x</a>
-    <ul>
-        <li>
-            <a href=index.html>Index</a>
-        </li>
-            <a href=contact.html>Contact</a>
-        </li>
-            <a href=about.html>About</a>
-        </li>
-    </ul>
-</div>
-
-<a href = "#" id="openBtn">
-    <span class="burger-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-    </span>
-</a>
-
-<body>
-    
-    <header class="imgHeader">
-        <img src="image/image header.jpg" alt="photo">
+    <header>
     </header>
+    <main>
+        <section class="carrousel-container">
+            <div class="background">
+                <p class="description">Nom du restaurant</p>
+                <p class="details">Description détaillée du restaurant</p>
+            </div>
+
+
+            <div class="carrousel">
+                <img src="image/restau-1.jpg" alt="Restaurant 1" class="image active" data-name="Restaurant 1"
+                    data-description="Cuisine gastronomique, vue panoramique.">
+                <img src="image/restau-2.jpg" alt="Restaurant 2" class="image" data-name="Restaurant 2"
+                    data-description="Ambiance cosy, spécialités italiennes.">
+                <img src="image/restau-3.jpg" alt="Restaurant 3" class="image" data-name="Restaurant 3"
+                    data-description="Buffet à volonté, desserts maison.">
+                <img src="image/restau-4.jpg" alt="Restaurant 4" class="image" data-name="Restaurant 4"
+                    data-description="Street food asiatique, ambiance moderne.">
+            </div>
+    </main>
+
+    <button class="prev">&lt;</button>
+    <button class="next">&gt;</button>
+    </section>
+
+    <div id="burgerbutton" class="Burgerbutton">
+        <a id="closeBtn" class="close">x</a>
+        <ul>
+            <li>
+                <a href=index.html>Index</a>
+            </li>
+            <a href=contact.html>Contact</a>
+            </li>
+            <a href=about.html>About</a>
+            </li>
+        </ul>
+    </div>
+
+    <a href="#" id="openBtn">
+        <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </a>
 
     <footer class="icones">
         <a href="https://github.com/salah-hnt" target="_blank">
-            <img src="https://avatars.githubusercontent.com/u/181408278?v=4&size=64" alt="lien vers mon profil"
-                >
+            <img src="https://avatars.githubusercontent.com/u/181408278?v=4&size=64" alt="lien vers mon profil">
         </a>
         <a href="https://github.com/ChrisG-WCS" target="_blank">
-            <img src="https://avatars.githubusercontent.com/u/201600440?v=4"
-                alt="lien vers le profils de christophe">
+            <img src="https://avatars.githubusercontent.com/u/201600440?v=4" alt="lien vers le profils de christophe">
         </a>
         <a href="https://github.com/Jerome0510" target="_blank">
             <img src="https://avatars.githubusercontent.com/u/200201178?v=4" alt="lien vers le profil de jerome">
         </a>
+
     </footer>
+
+    <script src="main.js"></script>
 
 </body>
 
