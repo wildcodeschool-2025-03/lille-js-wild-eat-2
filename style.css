@@ -8,6 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    
 }
 
 .carrousel-container {
@@ -53,7 +54,7 @@ body {
 
 .carrousel {
     position: absolute;
-    bottom: -75px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -103,6 +104,14 @@ button:hover {
 footer {
     text-align: center;
     padding: 20px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    
+    
+    
 }
 
 
@@ -116,7 +125,8 @@ p {
 
 .icones {
     display: flex;
-    gap: 20px;
+    gap: 05px;
+    
 }
 
 footer img {
@@ -125,6 +135,7 @@ footer img {
     margin: 15px;
     width: 50px;
     aspect-ratio: 1;
+    height: 64px;
 }
 
 footer img:hover {
@@ -147,9 +158,13 @@ footer img:hover {
     z-index: 1;
     top: 0;
     right: -250px;
-    background-color: rgb(121, 119, 119);
     padding-top: 60px;
     transition: right 0.5s ease;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75-.25);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
 .Burgerbutton a {
@@ -191,7 +206,7 @@ footer img:hover {
 }
 
 .burger-icon {
-    position: fixed;
+    position: absolute;
     right: 20px;
     top: 20px;
     cursor: pointer;
@@ -285,5 +300,20 @@ footer img:hover {
     button {
         font-size: 16px;
         padding: 6px 10px;
+    }
+}
+ 
+ @media (max-width: 600px) {
+    footer {
+        flex-direction: column; 
+    }
+
+    footer a {
+        margin: 10px 0; 
+    }
+
+    footer img {
+        width: 48px;
+        height: 48px; 
     }
 }
