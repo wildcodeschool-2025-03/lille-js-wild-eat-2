@@ -11,9 +11,8 @@ body {
 
 .carrousel-container {
     position: relative;
-    width: 90%;
-    max-width: 1500px;
-    height: 500px;
+    width: 100%;
+    height: 100vh;
     padding: 20px;
     background-color: #fff;
     border-radius: 20px;
@@ -21,9 +20,7 @@ body {
     overflow: visible;
     display: flex;
     justify-content: center;
-    /* Centre horizontalement */
     align-items: center;
-    /* Centre verticalement */
 }
 
 .background {
@@ -53,7 +50,6 @@ body {
     margin-top: 10px;
 }
 
-/* Carrousel */
 .carrousel {
     position: absolute;
     bottom: -75px;
@@ -206,9 +202,7 @@ footer img:hover {
 }
 
 @media (max-width: 1200px) {
-    .carrousel-container {
-        height: 450px;
-    }
+
 
     .carrousel img {
         width: 100px;
@@ -234,7 +228,7 @@ footer img:hover {
 
 @media (max-width: 768px) {
     .carrousel-container {
-        width: 95%;
+        width: 100%;
         height: 400px;
     }
 
