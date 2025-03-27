@@ -64,7 +64,10 @@ body {
     width: 120px;
     height: 150px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2),
+        -10px -10px 40px rgba(255, 255, 255, 0.9);
     cursor: pointer;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -108,7 +111,6 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
 
 p {
     color: white;
@@ -204,87 +206,4 @@ footer img:hover {
 .footer-image {
     width: 80px;
     height: auto;
-}
-
-@media (max-width: 1200px) {
-
-
-    .carrousel img {
-        width: 100px;
-        height: 120px;
-    }
-
-    .background {
-        padding: 15px;
-    }
-
-    .description {
-        font-size: 22px;
-    }
-
-    .details {
-        font-size: 14px;
-    }
-
-    .carrousel {
-        bottom: 60px;
-    }
-}
-
-@media (max-width: 768px) {
-    .carrousel-container {
-        width: 100%;
-    }
-
-    .carrousel img {
-        width: 90px;
-        height: 110px;
-    }
-
-    .background {
-        padding: 10px;
-    }
-
-    .description {
-        font-size: 20px;
-    }
-
-    .details {
-        font-size: 12px;
-    }
-
-    .carrousel {
-        bottom: 60px;
-    }
-
-    button {
-        font-size: 18px;
-        padding: 8px 12px;
-    }
-}
-
-@media (max-width: 480px) {
-
-
-    .carrousel img {
-        width: 80px;
-        height: 100px;
-    }
-
-    .description {
-        font-size: 18px;
-    }
-
-    .details {
-        font-size: 12px;
-    }
-
-    .carrousel {
-        bottom: 60px;
-    }
-
-    button {
-        font-size: 16px;
-        padding: 6px 10px;
-    }
 }
