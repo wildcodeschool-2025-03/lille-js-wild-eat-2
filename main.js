@@ -40,6 +40,7 @@ let currentIndex = 0;
 let isTransitioning = false;
 
 
+
 function updateBackground() {
     background.classList.add("fade-in");
     background.style.backgroundImage = `url(${restaurants[currentIndex].image})`;
