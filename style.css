@@ -270,9 +270,8 @@ p {
 
 footer img {
     transition: transform 0.3s ease;
-    border-radius: 80%;
+    border-radius: 50%;
     margin: 15px;
-    width: 50px;
     aspect-ratio: 1;
     height: 64px;
 }
