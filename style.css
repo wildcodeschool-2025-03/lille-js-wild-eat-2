@@ -62,22 +62,24 @@ body {
 
 .carrousel {
     position: absolute;
-    bottom: 50px;
-    left: 25%;
-    transform: translateX(50%);
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     gap: 20px;
     justify-content: center;
 }
 
+
 .carrousel img {
     width: 120px;
     height: 150px;
     object-fit: cover;
-    border-radius: 20px;
-    background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2),
-        -10px -10px 40px rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #f4f4f9, #e0e0e0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        0 -4px 6px rgba(255, 255, 255, 0.4);
     cursor: pointer;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -280,4 +282,45 @@ footer img:hover {
     }
 
 
+}
+
+@media (max-width: 1200px) {
+
+    /* Pour les écrans entre 1200px et 850px */
+    .carrousel img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .carrousel {
+        bottom: 60px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    /* Pour les écrans entre 850px et 600px */
+    .carrousel img {
+        width: 80px;
+        height: 100px;
+    }
+
+    .carrousel {
+        bottom: 70px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Pour les écrans de moins de 600px */
+    .carrousel img {
+        width: 60px;
+        height: 80px;
+    }
+
+    .carrousel {
+        bottom: 80px;
+        gap: 5px;
+    }
 }
