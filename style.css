@@ -101,11 +101,12 @@ body {
 .next,
 .prev {
     position: absolute;
-    bottom: 450px;
+    bottom: 43%;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     border: none;
     padding: 5px 10px;
+    top: 50%;
     cursor: pointer;
     font-size: 20px;
     border-radius: 5px;
@@ -113,12 +114,7 @@ body {
 }
 
 button:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.prev,
-.next {
-    top: 50%;
+    background: rgba(240, 237, 237, 0.8);
 }
 
 .prev {
@@ -130,7 +126,7 @@ button:hover {
 }
 
 footer {
-    padding: 20px;
+
     position: absolute;
     bottom: 0;
     left: 0;
@@ -151,16 +147,35 @@ p {
 
 }
 
+footer a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
 footer img {
     transition: transform 0.3s ease;
     border-radius: 50%;
-    margin: 15px;
+    margin: 7px;
     aspect-ratio: 1;
-    height: 45px;
+    height: 35px;
+
 }
 
 footer img:hover {
     transform: scale(1.4);
+}
+
+footer p {
+    margin-top: 5px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #1d1c1c;
 }
 
 .Burgerbutton {
@@ -180,7 +195,7 @@ footer img:hover {
 }
 
 .Burgerbutton a {
-    padding: 8px 8px 8px;
+    padding: 6px 6px 6px;
     text-decoration: none;
     margin-bottom: 20px;
     margin-right: 10px;
@@ -217,16 +232,23 @@ footer img:hover {
 
 .Burgerbutton.close {
     position: absolute;
-    top: 0;
+    top: 10;
     left: 25px;
     font-size: 36px;
+    top: 10px;
+    /* Ajuste la distance par rapport au haut */
+    right: 20px;
+    /* Place le bouton à droite */
+    font-size: 36px;
+    cursor: pointer;
 }
 
 .burger-icon span {
     display: block;
     width: 35px;
     height: 5px;
-    background-color: rgb(250, 250, 250);
+    background-color: white;
+
     margin: 6px 0;
 }
 
@@ -283,8 +305,12 @@ footer img:hover {
 }
 
 @media (max-width: 600px) {
+
     footer {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-evenly;
+        bottom: 0;
+        left: 0;
     }
 
     footer a {
@@ -292,47 +318,49 @@ footer img:hover {
     }
 
     footer img {
-        width: 48px;
-        height: 48px;
+        width: 40px;
+        height: 40px;
     }
 
+    footer p {
+        font-size: 10px;
 
-}
-
-@media (max-width: 1200px) {
-
-    .carrousel img {
-        width: 100px;
-        height: 120px;
     }
 
-    .carrousel {
-        bottom: 60px;
-    }
-}
+    @media (max-width: 1200px) {
 
-@media (max-width: 850px) {
+        .carrousel img {
+            width: 100px;
+            height: 120px;
+        }
 
-    .carrousel img {
-        width: 80px;
-        height: 100px;
-    }
-
-    .carrousel {
-        bottom: 70px;
-        gap: 10px;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .carrousel img {
-        width: 60px;
-        height: 80px;
+        .carrousel {
+            bottom: 60px;
+        }
     }
 
-    .carrousel {
-        bottom: 80px;
-        gap: 5px;
+    @media (max-width: 850px) {
+
+        .carrousel img {
+            width: 80px;
+            height: 100px;
+        }
+
+        .carrousel {
+            bottom: 70px;
+            gap: 10px;
+        }
     }
-}
+
+    @media (max-width: 600px) {
+
+        .carrousel img {
+            width: 60px;
+            height: 80px;
+        }
+
+        .carrousel {
+            bottom: 80px;
+            gap: 5px;
+        }
+    }
