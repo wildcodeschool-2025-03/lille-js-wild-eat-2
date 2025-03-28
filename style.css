@@ -7,7 +7,6 @@
 
 }
 
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -54,6 +53,7 @@ body {
     font-size: 16px;
     margin-top: 10px;
 }
+
 
 .restaurant-logo img {
     max-width: 80px;
@@ -109,14 +109,6 @@ body {
     border-width: 3px;
     border-style: hidden;
     background-color: transparent;
-}
-
-h2 {
-    font-size: 60px;
-    color: white;
-    font-family: "Winky Sans", sans-serif;
-    margin: 2vh;
-    margin-left: 8%;
 }
 
 .carrousel img:hover {
@@ -189,8 +181,6 @@ footer img:hover {
     transform: scale(1.4);
 }
 
-
-
 .Burgerbutton {
     height: 100%;
     width: 250px;
@@ -257,6 +247,29 @@ footer img:hover {
     height: auto;
 }
 
+@media (max-width: 1200px) {
+    .carrousel-container {
+        height: 450px;
+    }
+    .carrousel img {
+        width: 100px;
+        height: 120px;
+    }
+    .background {
+        padding: 15px;
+    }
+    .description {
+        font-size: 22px;
+    }
+    .details {
+        font-size: 14px;
+    }
+    .carrousel {
+        bottom: -60px;
+    }
+}
+
+@media (max-width: 850px) {
 
 .restaurant-icon {
     max-width: 150px;
@@ -270,6 +283,7 @@ footer img:hover {
 .restaurant-logo {
     position: absolute;
 
+}
 }
 
 @media (max-width: 600px) {
