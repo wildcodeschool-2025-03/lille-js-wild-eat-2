@@ -37,8 +37,9 @@ body {
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
     padding: 20px;
     color: white;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
@@ -76,11 +77,10 @@ body {
     width: 120px;
     height: 150px;
     object-fit: cover;
-    border-radius: 30px;
-    border-radius: 30px;
+    border-radius: 10px;
     background: linear-gradient(145deg, #f4f4f9, #e0e0e0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-        0 -4px 6px rgba(255, 255, 255, 0.4);
+        0 -4px 6px rgba(255, 255, 255, 255);
     cursor: pointer;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -115,6 +115,7 @@ body {
 button:hover {
     background: rgba(240, 237, 237, 0.8);
 }
+
 .prev {
     left: 20px;
 }
@@ -124,7 +125,7 @@ button:hover {
 }
 
 footer {
-    
+
     position: absolute;
     bottom: 0;
     left: 0;
@@ -145,7 +146,7 @@ p {
 
 }
 
-footer a{
+footer a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,14 +167,14 @@ footer img:hover {
     transform: scale(1.4);
 }
 
-footer p{
+footer p {
     margin-top: 5px;
     font-size: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #1d1c1c; 
+    color: #1d1c1c;
 }
 
 .Burgerbutton {
@@ -232,9 +233,11 @@ footer p{
     position: absolute;
     top: 10;
     left: 25px;
-    font-size: 36px; 
-    top: 10px; /* Ajuste la distance par rapport au haut */
-    right: 20px; /* Place le bouton à droite */
+    font-size: 36px;
+    top: 10px;
+    /* Ajuste la distance par rapport au haut */
+    right: 20px;
+    /* Place le bouton à droite */
     font-size: 36px;
     cursor: pointer;
 }
@@ -243,7 +246,7 @@ footer p{
     display: block;
     width: 35px;
     height: 5px;
-    background-color:white;
+    background-color: white;
 
     margin: 6px 0;
 }
@@ -319,8 +322,9 @@ footer p{
     }
 
     footer p {
-        font-size: 10px; 
+        font-size: 10px;
 
+    }
 }
 
 @media (max-width: 1200px) {
@@ -357,13 +361,6 @@ footer p{
 
     .carrousel {
         bottom: 80px;
-        gap: 5px;
+        gap: 15px;
     }
-}
-
-@media (max-width: 850px) {
-    .restaurant-icon {
-        display: none;
-    }
-}
 }
