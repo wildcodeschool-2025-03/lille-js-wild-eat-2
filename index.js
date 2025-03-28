@@ -9,6 +9,7 @@ function openNave() {
     burgerButton.classList.add("active");
 }
 
+
 function closeNave() {
-burgerButton.classList.remove("active");
+    burgerButton.classList.remove("active");
 }
