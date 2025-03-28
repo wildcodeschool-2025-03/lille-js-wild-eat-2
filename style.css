@@ -7,14 +7,6 @@
 
 }
 
-header {
-    text-align: center;
-    min-height: 250px;
-    background-image: url("image/Photo-Wenov.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: .5rem;
-}
 
 body {
     font-family: Arial, sans-serif;
@@ -164,8 +156,11 @@ button:hover {
 }
 
 footer {
-    text-align: center;
     padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
 }
 
 p {
