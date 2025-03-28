@@ -189,16 +189,6 @@ footer img:hover {
     transform: scale(1.4);
 }
 
-@media(max-width: 500px) {
-
-    .photosRestos img {
-        height: 250px;
-        width: 200px;
-        border-radius: 15px;
-        margin: 20px;
-    }
-}
-
 
 
 .Burgerbutton {
@@ -295,4 +285,6 @@ footer img:hover {
         width: 48px;
         height: 48px;
     }
+
+
 }
