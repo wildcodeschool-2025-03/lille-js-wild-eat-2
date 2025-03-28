@@ -4,6 +4,7 @@
     box-sizing: border-box;
     color: inherit;
     scroll-behavior: smooth;
+    text-decoration: none;
 
 }
 
@@ -109,7 +110,7 @@ body {
 }
 
 button:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(240, 237, 237, 0.8);
 }
 
 .prev,
@@ -126,7 +127,7 @@ button:hover {
 }
 
 footer {
-    padding: 20px;
+    
     position: absolute;
     bottom: 0;
     left: 0;
@@ -150,13 +151,23 @@ p {
 footer img {
     transition: transform 0.3s ease;
     border-radius: 50%;
-    margin: 15px;
+    margin: 7px;
     aspect-ratio: 1;
-    height: 64px;
+    height: 35px;
 }
 
 footer img:hover {
     transform: scale(1.4);
+}
+
+footer p{
+    margin-top: 5px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #1d1c1c; 
 }
 
 .Burgerbutton {
@@ -176,7 +187,7 @@ footer img:hover {
 }
 
 .Burgerbutton a {
-    padding: 8px 8px 8px;
+    padding: 6px 6px 6px;
     text-decoration: none;
     font-size: 25px;
     color: rgb(238, 184, 184);
@@ -200,16 +211,20 @@ footer img:hover {
 
 .Burgerbutton.close {
     position: absolute;
-    top: 0;
+    top: 10;
     left: 25px;
+    font-size: 36px; 
+    top: 10px; /* Ajuste la distance par rapport au haut */
+    right: 20px; /* Place le bouton à droite */
     font-size: 36px;
+    cursor: pointer;
 }
 
 .burger-icon span {
     display: block;
     width: 35px;
     height: 5px;
-    background-color: cyan;
+    background-color:white;
     margin: 6px 0;
 }
 
@@ -266,8 +281,12 @@ footer img:hover {
 }
 
 @media (max-width: 600px) {
+
     footer {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-evenly;
+        bottom: 0;
+        left: 0;
     }
 
     footer a {
@@ -275,9 +294,11 @@ footer img:hover {
     }
 
     footer img {
-        width: 48px;
-        height: 48px;
+        width: 40px;
+        height: 40px;
     }
 
-
+    footer p {
+        font-size: 10px; 
+    }
 }
