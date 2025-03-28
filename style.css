@@ -142,7 +142,7 @@ p {
 
 .icones {
     display: flex;
-    gap: 05px;
+    gap: 08px;
 
 }
 
@@ -174,7 +174,10 @@ footer p {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+    color: #1d1c1c; 
+    margin: 0;
     color: #1d1c1c;
+
 }
 
 .Burgerbutton {
@@ -308,7 +311,7 @@ footer p {
     footer {
         flex-direction: row;
         justify-content: space-evenly;
-        bottom: 0;
+        bottom: -9px;
         left: 0;
     }
 
