@@ -1,101 +1,369 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    list-style: none;
-}
-.imgHeader img{
-    width: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
+    color: inherit;
+    scroll-behavior: smooth;
+    text-decoration: none;
+
 }
 
 body {
-    background-image: url(image/pexels-timmossholder-1113520.jpg);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+}
+
+.carrousel-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    transition: background 0.5s ease-in-out;
+}
+
+.description {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.details {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.restaurant-icon {
+    width: 100px;
+}
+
+
+.carrousel {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.carrousel img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f4f4f9, #e0e0e0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        0 -4px 6px rgba(255, 255, 255, 255);
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.photosRestos button {
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: hidden;
+    background-color: transparent;
+}
+
+.carrousel img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.next,
+.prev {
+    position: absolute;
+    bottom: 43%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    top: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgba(240, 237, 237, 0.8);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+p {
+    color: white;
+    font-family: "Winky Sans", sans-serif;
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .icones {
-    
     display: flex;
-    gap: 20px;
+    gap: 08px;
+
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 footer img {
     transition: transform 0.3s ease;
-    border-radius: 80%;
-    margin: 15px;
-    width:50px;
+    border-radius: 50%;
+    margin: 7px;
     aspect-ratio: 1;
+    height: 35px;
+
 }
 
 footer img:hover {
     transform: scale(1.4);
 }
 
-@media(max-width: 500px){ 
+footer p {
+    margin-top: 5px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #1d1c1c;
+    margin: 0;
+    color: #1d1c1c;
 
-.photosRestos img {
-        height: 250px;
-        width: 200px;
-        border-radius: 15px;
-        margin: 20px
 }
-}
-  
-.Burgerbutton{
+
+.Burgerbutton {
     height: 100%;
     width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
     right: -250px;
-    background-color:rgb(121, 119, 119);
-    padding-top: 60px;
+    padding-top: 20px;
     transition: right 0.5s ease;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75-.25);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
 .Burgerbutton a {
-
-    padding: 8px 8px 8px;
+    padding: 6px 6px 6px;
     text-decoration: none;
-    font-size: 25px;
-    color: rgb(238, 184, 184);
-    display: block;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: rgb(250, 249, 249);
+    display: flex;
+    justify-content: flex-end;
     transition: 0.3s;
 }
 
-.Burgerbutton a:hover{
-    color:black;
-} 
+.Burgerbutton a:hover {
+    color: rgb(1, 133, 115);
 
-.Burgerbutton ul{
-list-style-type: none;
-padding: 0;
-margin: 0;
 }
 
-.Burgerbutton.active{
+#buttonX {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: transparent;
+    border-style: none;
+}
+
+.Burgerbutton ul {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.Burgerbutton.active {
     right: 0;
 }
 
-.Burgerbutton.close{
+.Burgerbutton.close {
     position: absolute;
-    top: 0;
+    top: 10;
     left: 25px;
     font-size: 36px;
-}
-.burger-icon span{
-display: block;
-width: 35px;
-height: 5px;
-background-color: cyan;
-margin: 6px 0;
+    top: 10px;
+    /* Ajuste la distance par rapport au haut */
+    right: 20px;
+    /* Place le bouton à droite */
+    font-size: 36px;
+    cursor: pointer;
 }
 
-.burger-icon{
-    position: fixed;
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+
+    margin: 6px 0;
+}
+
+.burger-icon {
+    position: absolute;
     right: 20px;
     top: 20px;
     cursor: pointer;
 }
 
+.footer-image {
+    width: 80px;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .carrousel img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .background {
+        padding: 15px;
+    }
+
+    .description {
+        font-size: 22px;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+
+    .carrousel {
+        bottom: 60px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    /*.restaurant-icon {
+        max-width: 150px;
+        max-height: 150px;
+        object-fit: 150px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }*/
+
+    .restaurant-logo {
+        position: absolute;
+
+    }
+}
+
+@media (max-width: 600px) {
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        bottom: -9px;
+        left: 0;
+    }
+
+    footer a {
+        margin: 10px 0;
+    }
+
+    footer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer p {
+        font-size: 10px;
+
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .carrousel img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .carrousel {
+        bottom: 60px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .carrousel img {
+        width: 80px;
+        height: 100px;
+    }
+
+    .carrousel {
+        bottom: 70px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .carrousel img {
+        width: 60px;
+        height: 80px;
+    }
+
+    .carrousel {
+        bottom: 80px;
+        gap: 15px;
+    }
+}
