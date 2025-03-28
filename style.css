@@ -37,8 +37,9 @@ body {
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
     padding: 20px;
     color: white;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
@@ -333,11 +334,5 @@ footer img:hover {
     .carrousel {
         bottom: 80px;
         gap: 5px;
-    }
-}
-
-@media (max-width: 850px) {
-    .restaurant-icon {
-        display: none;
     }
 }
