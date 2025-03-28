@@ -100,11 +100,12 @@ body {
 .next,
 .prev {
     position: absolute;
-    bottom: 450px;
+    bottom: 43%;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     border: none;
     padding: 5px 10px;
+    top: 50%;
     cursor: pointer;
     font-size: 20px;
     border-radius: 5px;
@@ -114,12 +115,6 @@ body {
 button:hover {
     background: rgba(0, 0, 0, 0.8);
 }
-
-.prev,
-.next {
-    top: 50%;
-}
-
 .prev {
     left: 20px;
 }
