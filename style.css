@@ -286,7 +286,6 @@ footer img:hover {
 
 @media (max-width: 1200px) {
 
-    /* Pour les écrans entre 1200px et 850px */
     .carrousel img {
         width: 100px;
         height: 120px;
@@ -299,7 +298,6 @@ footer img:hover {
 
 @media (max-width: 850px) {
 
-    /* Pour les écrans entre 850px et 600px */
     .carrousel img {
         width: 80px;
         height: 100px;
@@ -313,7 +311,6 @@ footer img:hover {
 
 @media (max-width: 600px) {
 
-    /* Pour les écrans de moins de 600px */
     .carrousel img {
         width: 60px;
         height: 80px;
@@ -322,5 +319,11 @@ footer img:hover {
     .carrousel {
         bottom: 80px;
         gap: 5px;
+    }
+}
+
+@media (max-width: 850px) {
+    .img.restaurant-logo {
+        display: none;
     }
 }
