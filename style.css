@@ -148,6 +148,14 @@ p {
 
 }
 
+footer a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
 footer img {
     transition: transform 0.3s ease;
     border-radius: 50%;
