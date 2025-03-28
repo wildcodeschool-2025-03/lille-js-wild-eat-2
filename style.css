@@ -77,11 +77,10 @@ body {
     width: 120px;
     height: 150px;
     object-fit: cover;
-    border-radius: 30px;
-    border-radius: 30px;
+    border-radius: 10px;
     background: linear-gradient(145deg, #f4f4f9, #e0e0e0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-        0 -4px 6px rgba(255, 255, 255, 0.4);
+        0 -4px 6px rgba(255, 255, 255, 255);
     cursor: pointer;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -326,41 +325,42 @@ footer p {
         font-size: 10px;
 
     }
+}
 
-    @media (max-width: 1200px) {
+@media (max-width: 1200px) {
 
-        .carrousel img {
-            width: 100px;
-            height: 120px;
-        }
-
-        .carrousel {
-            bottom: 60px;
-        }
+    .carrousel img {
+        width: 100px;
+        height: 120px;
     }
 
-    @media (max-width: 850px) {
+    .carrousel {
+        bottom: 60px;
+    }
+}
 
-        .carrousel img {
-            width: 80px;
-            height: 100px;
-        }
+@media (max-width: 850px) {
 
-        .carrousel {
-            bottom: 70px;
-            gap: 10px;
-        }
+    .carrousel img {
+        width: 80px;
+        height: 100px;
     }
 
-    @media (max-width: 600px) {
-
-        .carrousel img {
-            width: 60px;
-            height: 80px;
-        }
-
-        .carrousel {
-            bottom: 80px;
-            gap: 5px;
-        }
+    .carrousel {
+        bottom: 70px;
+        gap: 10px;
     }
+}
+
+@media (max-width: 600px) {
+
+    .carrousel img {
+        width: 60px;
+        height: 80px;
+    }
+
+    .carrousel {
+        bottom: 80px;
+        gap: 15px;
+    }
+}
